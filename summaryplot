@@ -1,0 +1,6 @@
+set term postscript eps color
+set out "summary.eps"
+set yrange [0:1.1]
+plot "summarydata" using 1:2 with lines lt rgb "#FF9B00" title 'fitness', "summarydata" using 1:3 with lines lt rgb "#006400" title 'preference', "summarydata" using 1:4 with lines lt rgb "#FF64FF" title 'choosiness', "summarydata" using 1:5 with lines lt rgb "#483D8B" title 'no. of. species', "summarydata" using 1:6 with lines lt rgb "#FF0000" title 'pure sp. fitness'
+
+

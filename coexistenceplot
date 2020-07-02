@@ -1,0 +1,6 @@
+set term postscript eps color
+set out "coexist.eps"
+set xrange [0:200]
+set yrange [0:16]
+plot "coexistencedata" using 1:2 with lines lt rgb "#FF0000" title 'specialists', "coexistencedata" using 1:3 with lines lt rgb "#4848FF" title 'generalists', "coexistencedata" using 1:4 with lines lt rgb "#000000" title 'total no', "coexistencedata" using 1:5 with points pt 7 lt rgb "#000000" title 's-g coexist'
+

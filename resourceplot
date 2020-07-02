@@ -1,0 +1,10 @@
+set term postscript eps color
+set out "resource.eps"
+set xrange [1:64]
+set yrange [1:64]
+set multiplot;
+set size 0.44,0.44;
+set origin 0.05,0.30; plot "resourcedata" using 1:2 with lines lt rgb "#000000" title 'w-r1', "resourcedata" using 1:4 with lines lt rgb "#FF64FF" title 'w-r2', "resourcedata" using 1:6 with lines lt rgb "#483D8B" title 'w-r3',  "resourcedata" using 1:8 with lines lt rgb "#FF0000" title 'w-r4';
+set origin 0.5,0.30; plot "resourcedata" using 1:3 with lines lt rgb "#000000" title 'h-r1', "resourcedata" using 1:5 with lines lt rgb "#FF64FF" title 'h-r2',"resourcedata" using 1:7 with lines lt rgb "#483D8B" title 'h-r3', "resourcedata" using 1:9 with lines lt rgb "#FF0000" title 'h-r4'
+unset multiplot 
+
